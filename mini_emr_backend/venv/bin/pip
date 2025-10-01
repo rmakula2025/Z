@@ -1,4 +1,4 @@
-#!/Users/roshithamakula/Downloads/mini_emr_backend/venv/bin/python3.12
+#!/Users/roshithamakula/Downloads/Z/mini_emr_backend/venv/bin/python3.12
 import sys
 from pip._internal.cli.main import main
 if __name__ == '__main__':
