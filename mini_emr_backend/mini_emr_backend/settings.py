@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'mini_emr_backend.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.dummy"
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",  # creates a local SQLite file
     }
 }
-
 mongoengine.connect(
     db="mini_emr",
     host = "mongodb+srv://rmakula2025_db_user:Roshi%402001@cluster0.nzkcori.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
