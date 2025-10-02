@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "http://127.0.0.1:8000";
+// Use your Render backend URL instead of localhost
+const BASE_URL = "https://z-backend-gz51.onrender.com";
 
 // Admin API instance
 export const adminAPI = axios.create({
