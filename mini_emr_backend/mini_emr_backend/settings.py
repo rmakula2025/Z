@@ -28,10 +28,12 @@ SECRET_KEY = 'django-insecure-=*z$3@b!r9oo*2rrqw&=vw_x0_py2*0^ktwcy$2-05*f)grf_q
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "mini-emr-backend.onrender.com",
-    "z-frontend-jzpg.onrender.com",
-    "localhost"
+    "z-backend-gz51.onrender.com",   # actual backend Render URL
+    "z-frontend-jzpg.onrender.com",  # your frontend Render URL
+    "localhost",
+    "127.0.0.1"
 ]
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
