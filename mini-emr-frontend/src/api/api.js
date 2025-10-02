@@ -1,19 +1,16 @@
 import axios from "axios";
 
-// ✅ Backend Render URL
 const BASE_URL = "https://z-backend-gz51.onrender.com";
 
-// EMR APIs (patients, medications, appointments)
-export const emrAPI = axios.create({
-  baseURL: `${BASE_URL}/emr/`,  // backend root for EMR
+// Admin API instance
+export const adminAPI = axios.create({
+  baseURL: `${BASE_URL}/admin/`,
 });
 
-// Patient Portal APIs
+// Patient Portal API instance
 export const patientAPI = axios.create({
-  baseURL: `${BASE_URL}/`,     // portal app APIs
+  baseURL: `${BASE_URL}/`,
 });
 
-// ✅ Alias so old code using adminAPI still works
-export const adminAPI = emrAPI;
-
-export default emrAPI;
+// Default export for backward compatibility
+export default adminAPI;
