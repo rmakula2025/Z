@@ -1,16 +1,17 @@
 import axios from "axios";
 
-const BASE_URL = "https://z-backend-gz51.onrender.com";  // use backend Render URL
+// ✅ Use your deployed backend Render URL
+const BASE_URL = "https://z-backend-gz51.onrender.com";
 
-
-// Admin API instance
+// Admin / EMR API instance (now under /emr/)
 export const adminAPI = axios.create({
-  baseURL: `${BASE_URL}/admin/`,
+  baseURL: `${BASE_URL}/emr/`,
 });
 
-// Patient Portal API instance
+// Patient Portal API instance (root level)
 export const patientAPI = axios.create({
   baseURL: `${BASE_URL}/`,
 });
 
+// Default export (so old imports still work)
 export default adminAPI;
