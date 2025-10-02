@@ -1,7 +1,6 @@
 import axios from "axios";
 
-// Use your Render backend URL instead of localhost
-const BASE_URL = "https://z-backend-gz51.onrender.com";
+const BASE_URL = "https://z-backend-gz51.onrender.com";  // point to backend
 
 // Admin API instance
 export const adminAPI = axios.create({
@@ -13,5 +12,4 @@ export const patientAPI = axios.create({
   baseURL: `${BASE_URL}/`,
 });
 
-// Default export for backward compatibility
 export default adminAPI;
