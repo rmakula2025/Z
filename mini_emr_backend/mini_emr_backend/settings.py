@@ -1,7 +1,3 @@
- """
-Django settings for mini_emr_backend project.
-"""
-
 from pathlib import Path
 import mongoengine
 import os
