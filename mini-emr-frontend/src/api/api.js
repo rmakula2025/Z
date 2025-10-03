@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://z-backend-gz51.onrender.com";
+const BASE_URL = "https://z-backend-5cdi.onrender.com";
 
 // Admin API instance
 export const adminAPI = axios.create({
